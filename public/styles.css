@@ -1,113 +1,128 @@
-.img{
+.img {
     padding-left: 30px;
     margin-top: -1%;
     background-color: transparent;
 }
-.atm{
+
+.atm {
     width: 3%;
     height: 3%;
     padding-left: 80%;
     padding-top: 3%;
     margin-top: -1%;
-   
+
 }
-.atm-b{
+
+.atm-b {
     padding-left: 88%;
     margin-top: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
-    nav > ul {
+
+nav>ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 1%;
 }
-.top{
+
+.top {
     background-color: rgb(36, 9, 87);
     color: white;
     width: 100%;
     max-width: 500%;
     height: 50px;
 }
+
 .subHeading-title[_ngcontent-ssr-c171] {
-    font-family: Interstate_Light,sans-serif;
+    font-family: Interstate_Light, sans-serif;
     font-size: 16px;
     color: #333;
     letter-spacing: 2px;
     line-height: 24px;
     text-transform: uppercase;
 }
-.lb{
+
+.lb {
     background-image: url(light\ background.jpg);
     margin-top: 5%;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.earn{
-    font-family: bahoma, Interstate_Bold,sans-serif;
+
+.earn {
+    font-family: bahoma, Interstate_Bold, sans-serif;
     font-size: 42px;
     color: #333;
     letter-spacing: 0;
-    line-height: 50px;}
-    .after{
-        font-family: arial, Interstate_Light,sans-serif;
-        font-size: 16px;
-        color: #333;
-        letter-spacing: 0;
-        line-height: 24px;
-        margin-bottom: 10px!important;
-        padding-top: -15%;
-    }
-       
-       .learn{
-        background-color: #056dae;
-        color: #fff;
-        outline: none;
-        padding: 13px 59.5px;
+    line-height: 50px;
+}
+
+.after {
+    font-family: arial, Interstate_Light, sans-serif;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 10px !important;
+    padding-top: -15%;
+}
+
+.learn {
+    background-color: #056dae;
+    color: #fff;
+    outline: none;
+    padding: 13px 59.5px;
     font-size: 16px;
     border: 0 solid transparent;
     border-radius: 8px;
     display: inline-block;
     text-decoration: none;
     white-space: nowrap;
-    font-family: Interstate_Bold,sans-serif;
+    font-family: Interstate_Bold, sans-serif;
     cursor: pointer;
     transition-duration: 0.2s;
-       }
-       .learn:hover{
-        background-color: #02436b;
-        color: #fff;
-       }
-       .cc{
-        float: right;
-        display: flex;
-        width: 30%;
-        padding-right: 35%;
-       }
-       .mortage{
-        border-radius: 16px;
-        background-color: #fff;
-        border: 1px solid #3d545c;
-        padding-bottom: 20px;
-        margin-top: 1%;
-        display: block;
-        text-align: center;
-       }
-       .dot{
-        height: 38px;
-  width: 38px;
-  background-color:#eff3f8;
-  border-radius: 50%;
-  display: inline;
-  justify-content: space-evenly;
-       }
-.dot:hover{
+}
+
+.learn:hover {
+    background-color: #02436b;
+    color: #fff;
+}
+
+.cc {
+    float: right;
+    display: flex;
+    width: 30%;
+    padding-right: 35%;
+}
+
+.mortage {
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #3d545c;
+    padding-bottom: 20px;
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+}
+
+.dot {
+    height: 38px;
+    width: 38px;
+    background-color: #eff3f8;
+    border-radius: 50%;
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.dot:hover {
     background-color: rgb(0, 42, 84);
     cursor: pointer;
 }
-.loan{
+
+.loan {
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -115,7 +130,8 @@
     padding-left: 6px;
     padding-top: 6px;
 }
-.ml{
+
+.ml {
     display: inline-flex;
     flex-wrap: wrap;
     white-space: nowrap;
@@ -128,27 +144,37 @@
     font-weight: 400;
     text-align: center;
 }
-.p4{
+
+.p4 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 390px;
 }
-.container{
+
+.service-section{
+    height: 100vh;
+    margin-top: 4%;
+}
+
+.containerr {
     display: flex;
     justify-content: space-between;
-    padding-top: 8%;
-    
 }
-.per{
+
+.per {
     border: 0.5px solid #e6ecee;
-    height: 107%;
+    /* height: 107%; */
     width: 390px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-width: thin;
 }
-.d2{
+
+.d2 {
     border: none;
-    padding: 20px 20px 0;
-    margin-bottom: 20px;
+    padding: 10px 15px 0;
+    margin-bottom: 1em;
+}
+.d2 p, .d2 button {
+    font-size: .8em;
 }
