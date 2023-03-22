@@ -5,7 +5,7 @@
     "tailwindcss": "^3.2.7"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./public/dist/styles.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch"
   },
   "dependencies": {
     "netlify": "^13.1.3"

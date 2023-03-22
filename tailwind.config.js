@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Barlow Semi Condensed, sans-serif'
+        sans: 'Fira Sans, sans-serif'
       }
     },
   },

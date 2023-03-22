@@ -10,61 +10,94 @@
 
 </head>
 
-<body>
-  <img src="images/logo.png" alt="citi bank logo" class="img" />
-  <img src="images/atm.png" alt="atm locator" class="atm" />
-  <p class="atm-b">ATM / Branch</p>
-  <div class="top">
-    <nav>
-      <ul>
-        <li>Credit Cards</li>
-        <li>Banking</li>
-        <li>Lending</li>
-        <li>Investing</li>
-        <li>Wealth Management</li>
-        <li><a href="Account-Opening" style="text-decoration: none; color: white;">Open an Account</a></li>
-        <li>How can we help?</li>
-      </ul>
-    </nav>
-  </div>
-  <div class="lb">
-    <div _ngcontent-ssr-c171="" class="subHeading-title ng-star-inserted">CITI<sup>®</sup> CREDIT CARDS</div>
-    <img src="images/CC.png" alt="citi cards" class="cc" />
-    <p class="earn"><strong>Choose the right Citi<sup>®</sup> <br /> credit card for you</strong></p>
-    <p class="after">Whether you want Cash Back, Great Airline Miles, Rewards for <br />
-      Costco Members, or a Low Interest Rate. the choice is all yours</p>
-    <button class="learn">Learn More</button>
-  </div>
-  <div class="mortage">
-    <nav>
-      <ul>
-        <span class="dot">
-          <li><img src="images/credit-card.png" alt="credit-card icon" class="loan">
-            <p class="ml"><strong>Credit Cards</strong></p>
-          </li>
-        </span>
-        <span class="dot">
-          <li><img src="images/assistance.png" alt="mortage icon" class="loan">
-            <p class="ml"><strong>Mortage</strong></p>
-          </li>
-        </span>
-        <span class="dot">
-          <li><img src="images/loan.png" alt="loan icon" class="loan">
-            <p class="ml"><strong>Personal Loans</strong></p>
-          </li>
-        </span>
-        <span class="dot">
-          <li><img src="images/save-money.png" alt="investment icon" class="loan">
-            <p class="ml"><strong>Investing Options</strong></p>
-          </li>
-        </span>
+<body class="antialiased">
+  <!-- First Section -->
+  <section class="p-2">
+    <img src="images/logo.png" alt="citi bank logo" class="img" />
+    <img src="images/atm.png" alt="atm locator" class="atm" />
+    <p class="atm-b">ATM / Branch</p>
+    <div class="top">
+      <nav>
+        <ul>
+          <li>Credit Cards</li>
+          <li>Banking</li>
+          <li>Lending</li>
+          <li>Investing</li>
+          <li>Wealth Management</li>
+          <li><a href="Account-Opening" style="text-decoration: none; color: white;">Open an Account</a></li>
+          <li>How can we help?</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="lb flex items-center justify-between w-full">
+      <div>
+        <div _ngcontent-ssr-c171="" class="subHeading-title ng-star-inserted">CITI<sup>®</sup> CREDIT CARDS</div>
+        <p class="earn"><strong>Choose the right Citi<sup>®</sup> <br /> credit card for you</strong></p>
+        <p class="after">Whether you want Cash Back, Great Airline Miles, Rewards for <br />
+          Costco Members, or a Low Interest Rate. the choice is all yours</p>
+        <button class="learn">Learn More</button>
+      </div>
+      <div class="flex space-x-8">
+        <img src="images/CC.png" alt="citi cards" class="w-80" />
+        <div class="max-w-96 h-60 p-4 bg-white shadow-2xl rounded-xl">
+          <div class="flex space-x-4">
+            <div class="flex flex-col">
+              <label for="#" class="text-sm mb-1">Username</label>
+              <input type="text" placeholder="e.g JoeDavid4"
+                class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
+            </div>
+            <div class="flex flex-col">
+              <label for="#" class="text-sm mb-1">Username</label>
+              <input type="text" placeholder="e.g JoeDavid4"
+                class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
+            </div>
+          </div>
+          <div class="flex space-x-1 mt-2">
+            <input type="checkbox" class="border-indigo-700" name="" id="">
+            <p>Remember Me</p>
+          </div>
+          <button class="w-full bg-indigo-900 text-white rounded-lg py-2 mt-4 hover:bg-indigo-500">Sign On</button>
+          <div class="flex justify-between mt-8">
+            <p><a href="#" class="hover:text-indigo-700">Register</a> / <a href="#"
+                class="hover:text-indigo-700">Activate</a></p>
+            <p>Forgot <a href="#" class="hover:text-indigo-700">UserID</a> or <a href="#"
+                class="hover:text-indigo-700">Password</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mortage">
+      <nav>
+        <ul>
+          <span class="dot">
+            <li><img src="images/credit-card.png" alt="credit-card icon" class="loan">
+              <p class="ml"><strong>Credit Cards</strong></p>
+            </li>
+          </span>
+          <span class="dot">
+            <li><img src="images/assistance.png" alt="mortage icon" class="loan">
+              <p class="ml"><strong>Mortage</strong></p>
+            </li>
+          </span>
+          <span class="dot">
+            <li><img src="images/loan.png" alt="loan icon" class="loan">
+              <p class="ml"><strong>Personal Loans</strong></p>
+            </li>
+          </span>
+          <span class="dot">
+            <li><img src="images/save-money.png" alt="investment icon" class="loan">
+              <p class="ml"><strong>Investing Options</strong></p>
+            </li>
+          </span>
 
-      </ul>
-    </nav>
-  </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
 
   <!-- Service Section -->
-  <section class="service-section">
+  <section class="service-section p-2">
     <div class="containerr">
       <div class="per">
         <img class="p4" src="images/P4.jpg">
@@ -96,7 +129,84 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Third Section -->
+  <section class="mt-4 bg-gray-100 w-full px-24 pt-20 pb-20 space-y-28">
+    <div class="flex justify-between items-center">
+      <img src="images/P5.jpg" class="rounded-lg" alt="">
+      <div class="w-96 space-y-4">
+        <p class="text-lg font-extralight tracking-wider">YOUR SAVINGS MADE SIMPLE</p>
+        <p class="text-3xl font-extrabold">How to Choose the Right Bank Account</p>
+        <p class="text-sm">Here's a simple guide to the main types of accounts you can open at a bank.</p>
+        <button class="learn">Read More</button>
+      </div>
+    </div>
+    <div class="flex justify-between items-center">
+      <div class="w-full space-y-4">
+        <p class="text-lg font-extralight tracking-wider">LIFE AND MONEY BY CITI</p>
+        <p class="text-3xl font-extrabold">4 Ways to Increase Your Home Equity</p>
+        <p class="text-sm">Buying a home is a big step; here are four tips to help you build up the equity in your home
+          to get the most out
+          of your investment long-term.</p>
+        <button class="learn">Read More</button>
+      </div>
+      <img src="images/P3.jpg" class="rounded-lg" alt=""> F
+    </div>
+  </section>
+
+  <!-- Fourth Section -->
+  <section class="mt-4 w-full px-24 pt-20 pb-20">
+    <div class="flex justify-between items-center">
+      <img src="images/P6.png" class="rounded-lg" alt="">
+      <div class="w-96 space-y-4">
+        <p class="text-lg font-extralight tracking-wider">RACIAL EQUITY AT CITI</p>
+        <p class="text-3xl font-extrabold">Action for Racial Equity</p>
+        <p class="text-sm">We're marshaling the talent and capabilities of our institution like never before to help
+          communities of color
+          build wealth and strong financial futures.</p>
+        <button class="learn">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="w-full bg-zinc-900 h-1/2 px-24 pt-20 pb-12">
+    <div class="space-y-8">
+      <p class="text-white">
+        Important Legal Disclosures & Information
+
+        Citibank.com provides information about and access to accounts and financial services provided by Citibank, N.A.
+        and its affiliates in the United States and its territories. It does not, and should not be construed as, an
+        offer, invitation or solicitation of services to individuals outside of the United States.
+
+        Terms, conditions and fees for accounts, products, programs and services are subject to change. Not all
+        accounts, products, and services as well as pricing described here are available in all jurisdictions or to all
+        customers. Your eligibility for a particular product and service is subject to a final determination by
+        Citibank. Your country of citizenship, domicile, or residence, if other than the United States, may have laws,
+        rules, and regulations that govern or affect your application for and use of our accounts, products and
+        services, including laws and regulations regarding taxes, exchange and/or capital controls that you are
+        responsible for following.
+
+        The products, account packages, promotional offers and services described in this website may not apply to
+        customers of International Personal Bank U.S. in the Citigold® Private Client International, Citigold®
+        International, Citi International Personal, Citi Global Executive Preferred, and Citi Global Executive Account
+        Packages.
+
+        Deposit products and services are offered by Citibank, N.A., Member FDIC
+      </p>
+      <div class="text-center space-x-4">
+        <a href="#" class="text-white text-4xl"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" class="text-white text-4xl"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" class="text-white text-4xl"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" class="text-white text-4xl"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
