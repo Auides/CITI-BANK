@@ -7,18 +7,37 @@
   <title>Online Banking, Mortgages, Personal Loans, Investing | Citi.com</title>
   <link rel="Shortcut Icon" href="images/favicon.ico" type="image/ico" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 
 </head>
 
 <body class="antialiased">
   <!-- First Section -->
   <section class="p-2">
-    <img src="images/logo.png" alt="citi bank logo" class="img" />
-    <img src="images/atm.png" alt="atm locator" class="atm" />
-    <p class="atm-b">ATM / Branch</p>
-    <div class="top">
-      <nav>
-        <ul>
+    <header class="max-w-full flex justify-between items-center">
+      <img src="images/logo.png" alt="citi bank logo" class="img" />
+      <div class="grid place-items-center">
+        <img src="images/atm.png" alt="atm locator" class="atm w-10 h-10" />
+        <p class="atm-b">ATM / Branch</p>
+      </div>
+    </header>
+    <div class="top flex md:block items-center">
+      <nav class="flex items-center md:block md:items-start w-full">
+        <div class="md:hidden w-full flex justify-between items-center mx-2">
+          <button id="menu-button">
+            <ion-icon name="menu" class="text-3xl"></ion-icon>
+          </button>
+          <button id="close-button" class="hidden">
+            <ion-icon name="close" class="text-3xl"></ion-icon>
+          </button>
+          <div class="flex items-center space-x-2">
+            <ion-icon name="person-add" class="text-xl"></ion-icon>
+            <a href="#" id="sign-on-btn">Sign On</a>
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex">
           <li>Credit Cards</li>
           <li>Banking</li>
           <li>Lending</li>
@@ -29,7 +48,47 @@
         </ul>
       </nav>
     </div>
-    <div class="lb flex items-center justify-between w-full">
+
+    <!-- mobile Nav -->
+    <div class="bg-white w-full h-56 p-4 z-10 mobile-menu md:hidden hidden">
+      <ul class="space-y-3">
+        <li>Credit Cards</li>
+        <li>Banking</li>
+        <li>Lending</li>
+        <li>Investing</li>
+        <li>Wealth Management</li>
+      </ul>
+    </div>
+
+    <!-- Sign On -->
+    <div class="max-w-80 h-80 p-4 bg-white shadow-2xl rounded-xl md:hidden hidden sign-on">
+      <div class="flex flex-col space-y-4">
+        <div class="flex flex-col">
+          <label for="#" class="text-sm mb-1">Username</label>
+          <input type="text" placeholder="e.g JoeDavid4"
+            class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
+        </div>
+        <div class="flex flex-col">
+          <label for="#" class="text-sm mb-1">Password</label>
+          <input type="password" placeholder="Enter Your Password"
+            class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
+        </div>
+      </div>
+      <div class="flex space-x-1 mt-2">
+        <input type="checkbox" class="border-indigo-700" name="" id="">
+        <p>Remember Me</p>
+      </div>
+      <button class="w-full bg-indigo-900 text-white rounded-lg py-2 mt-4 hover:bg-indigo-500">Sign On</button>
+      <div class="flex justify-between mt-8">
+        <p><a href="#" class="hover:text-indigo-700">Register</a> / <a href="#"
+            class="hover:text-indigo-700">Activate</a></p>
+        <p>Forgot <a href="#" class="hover:text-indigo-700">UserID</a> or <a href="#"
+            class="hover:text-indigo-700">Password</a></p>
+      </div>
+    </div>
+
+    <!-- End of Navigation Bar -->
+    <div class="lb py-10 flex flex-col md:flex-row items-center justify-evenly w-full space-y-4 md:space-y-0">
       <div>
         <div _ngcontent-ssr-c171="" class="subHeading-title ng-star-inserted">CITI<sup>®</sup> CREDIT CARDS</div>
         <p class="earn"><strong>Choose the right Citi<sup>®</sup> <br /> credit card for you</strong></p>
@@ -37,9 +96,9 @@
           Costco Members, or a Low Interest Rate. the choice is all yours</p>
         <button class="learn">Learn More</button>
       </div>
-      <div class="flex space-x-8">
+      <div class="flex flex-col md:flex-row space-x-8">
         <img src="images/CC.png" alt="citi cards" class="w-80" />
-        <div class="max-w-96 h-60 p-4 bg-white shadow-2xl rounded-xl">
+        <div class="max-w-96 h-60 p-4 bg-white shadow-2xl rounded-xl hidden md:block">
           <div class="flex space-x-4">
             <div class="flex flex-col">
               <label for="#" class="text-sm mb-1">Username</label>
@@ -47,8 +106,8 @@
                 class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
             </div>
             <div class="flex flex-col">
-              <label for="#" class="text-sm mb-1">Username</label>
-              <input type="text" placeholder="e.g JoeDavid4"
+              <label for="#" class="text-sm mb-1">Password</label>
+              <input type="password" placeholder="Enter Your Password"
                 class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
             </div>
           </div>
@@ -66,39 +125,41 @@
         </div>
       </div>
     </div>
-    <div class="mortage">
-      <nav>
-        <ul>
-          <span class="dot">
-            <li><img src="images/credit-card.png" alt="credit-card icon" class="loan">
-              <p class="ml"><strong>Credit Cards</strong></p>
-            </li>
-          </span>
-          <span class="dot">
-            <li><img src="images/assistance.png" alt="mortage icon" class="loan">
-              <p class="ml"><strong>Mortage</strong></p>
-            </li>
-          </span>
-          <span class="dot">
-            <li><img src="images/loan.png" alt="loan icon" class="loan">
-              <p class="ml"><strong>Personal Loans</strong></p>
-            </li>
-          </span>
-          <span class="dot">
-            <li><img src="images/save-money.png" alt="investment icon" class="loan">
-              <p class="ml"><strong>Investing Options</strong></p>
-            </li>
-          </span>
+    <!-- Mini navbar -->
+    <div class="mortage mt-6 w-full flex border border-indigo-700 rounded-xl justify-between px-2 md:py-4 py-2">
+      <ul class="md:flex md:justify-evenly md:w-full">
+        <span class="dot">
+          <li class="">
+            <img src="images/credit-card.png" alt="credit-card icon" class="loan">
+            <p class="ml"><strong>Credit Cards</strong></p>
+          </li>
+        </span>
+        <span class="dot">
+          <li>
+            <img src="images/assistance.png" alt="mortage icon" class="loan">
+            <p class="ml"><strong>Mortage</strong></p>
+          </li>
+        </span>
+        <span class="dot">
+          <li>
+            <img src="images/loan.png" alt="loan icon" class="loan">
+            <p class="ml"><strong>Personal Loans</strong></p>
+          </li>
+        </span>
+        <span class="dot">
+          <li>
+            <img src="images/save-money.png" alt="investment icon" class="loan">
+            <p class="ml"><strong>Investing Options</strong></p>
+          </li>
+        </span>
 
-        </ul>
-      </nav>
+      </ul>
     </div>
   </section>
 
-
   <!-- Service Section -->
   <section class="service-section p-2">
-    <div class="containerr">
+    <div class="containerr space-y-4 md:space-y-0">
       <div class="per">
         <img class="p4" src="images/P4.jpg">
         <div class="d2">
@@ -131,34 +192,34 @@
   </section>
 
   <!-- Third Section -->
-  <section class="mt-4 bg-gray-100 w-full px-24 pt-20 pb-20 space-y-28">
-    <div class="flex justify-between items-center">
+  <section class="mt-4 bg-gray-100 max-w-full px-8 md:p-24 pt-20 pb-20 space-y-16 md:space-y-28">
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-3">
       <img src="images/P5.jpg" class="rounded-lg" alt="">
-      <div class="w-96 space-y-4">
+      <div class="w-80 md:w-96 space-y-3 text-center md:text-left">
         <p class="text-lg font-extralight tracking-wider">YOUR SAVINGS MADE SIMPLE</p>
         <p class="text-3xl font-extrabold">How to Choose the Right Bank Account</p>
         <p class="text-sm">Here's a simple guide to the main types of accounts you can open at a bank.</p>
         <button class="learn">Read More</button>
       </div>
     </div>
-    <div class="flex justify-between items-center">
-      <div class="w-full space-y-4">
-        <p class="text-lg font-extralight tracking-wider">LIFE AND MONEY BY CITI</p>
+    <div class="flex flex-col-reverse md:flex-row justify-between items-center">
+      <div class="w-80 md:w-full space-y-3 text-center md:text-left">
+        <p class="text-lg font-extralight tracking-wider mt-3 md:mt-0">LIFE AND MONEY BY CITI</p>
         <p class="text-3xl font-extrabold">4 Ways to Increase Your Home Equity</p>
         <p class="text-sm">Buying a home is a big step; here are four tips to help you build up the equity in your home
           to get the most out
           of your investment long-term.</p>
         <button class="learn">Read More</button>
       </div>
-      <img src="images/P3.jpg" class="rounded-lg" alt=""> F
+      <img src="images/P3.jpg" class="rounded-lg" alt="">
     </div>
   </section>
 
   <!-- Fourth Section -->
-  <section class="mt-4 w-full px-24 pt-20 pb-20">
-    <div class="flex justify-between items-center">
+  <section class="mt-4 w-full px-8 md:p-24 pt-20 pb-20">
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-3">
       <img src="images/P6.png" class="rounded-lg" alt="">
-      <div class="w-96 space-y-4">
+      <div class="w-80 md:w-96 space-y-3 text-center md:text-left">
         <p class="text-lg font-extralight tracking-wider">RACIAL EQUITY AT CITI</p>
         <p class="text-3xl font-extrabold">Action for Racial Equity</p>
         <p class="text-sm">We're marshaling the talent and capabilities of our institution like never before to help
@@ -170,9 +231,9 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="w-full bg-zinc-900 h-1/2 px-24 pt-20 pb-12">
+  <footer class="w-full bg-zinc-900 h-1/2 px-8 md:p-24 pt-20 pb-12">
     <div class="space-y-8">
-      <p class="text-white">
+      <p class="text-white md:text-justify">
         Important Legal Disclosures & Information
 
         Citibank.com provides information about and access to accounts and financial services provided by Citibank, N.A.
@@ -195,15 +256,13 @@
         Deposit products and services are offered by Citibank, N.A., Member FDIC
       </p>
       <div class="text-center space-x-4">
-        <a href="#" class="text-white text-4xl"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#" class="text-white text-4xl"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="#" class="text-white text-4xl"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="#" class="text-white text-4xl"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-whatsapp"></ion-icon></a>
       </div>
     </div>
   </footer>
-
-
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
