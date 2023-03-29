@@ -7,65 +7,95 @@
   <title>Citi Bank Online</title>
   <link rel="Shortcut Icon" href="images/favicon.ico" type="image/ico" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="details.css" />
-  <body class="antialiased">
-    <!-- First Section -->
-    <section class="p-2">
-      <header class="max-w-full flex justify-between items-center">
-        <img src="images/logo.png" alt="citi bank logo" class="img" />
-        <div class="grid place-items-center">
-          <img src="images/atm.png" alt="atm locator" class="atm w-10 h-10" />
-          <p class="atm-b">ATM / Branch</p>
+  <!-- <link rel="stylesheet" href="details.css" /> -->
+
+
+<body class="antialiased">
+  <!-- First Section -->
+  <section class="p-2">
+    <header class="max-w-full flex justify-between items-center">
+      <img src="images/logo.png" alt="citi bank logo" class="img" />
+      <div class="grid place-items-center">
+        <img src="images/atm.png" alt="atm locator" class="atm w-10 h-10" />
+        <p class="atm-b">ATM / Branch</p>
+      </div>
+    </header>
+    <div class="top flex md:block items-center">
+      <nav class="flex items-center md:block md:items-start w-full">
+        <div class="md:hidden w-full flex justify-between items-center mx-2">
+          <button id="menu-button">
+            <ion-icon name="menu" class="text-3xl"></ion-icon>
+          </button>
+          <button id="close-button" class="hidden">
+            <ion-icon name="close" class="text-3xl"></ion-icon>
+          </button>
+          <div class="flex items-center space-x-2">
+            <ion-icon name="person-add" class="text-xl"></ion-icon>
+            <a href="#" id="sign-on-btn">Sign On</a>
+          </div>
         </div>
-        </header>
+
         <!-- Desktop Nav -->
         <ul class="hidden md:flex">
-            <li>Credit Cards</li>
-            <li>Banking</li>
-            <li>Lending</li>
-            <li>Investing</li>
-            <li>Wealth Management</li>
-            <li><a href="Account-Opening" style="text-decoration: none; color: white;">Open an Account</a></li>
-            <li>How can we help?</li>
-          </ul>
-        </nav>
-      </div>
-  
-      <!-- mobile Nav -->
-      <div class="bg-white w-full h-56 p-4 z-10 mobile-menu md:hidden hidden">
-        <ul class="space-y-3">
           <li>Credit Cards</li>
           <li>Banking</li>
           <li>Lending</li>
           <li>Investing</li>
           <li>Wealth Management</li>
+          <li><a href="registration.html" style="text-decoration: none; color: white;">Open an Account</a></li>
+          <li>How can we help?</li>
         </ul>
-      </div>
-  
-        </section>
-        <div class="account-opening-bg"></div>
-        <img src="images/p6.jpg"/>
+      </nav>
     </div>
-    <div class="apply">
-<h2>Apply for an Account</h2>
-<p>A few clicks and you are done</p>
-<label for="app">Select type of account
-  <a href="registration2.html" class="check"> <select id="app" name="app">
-        <option value="">Select type of account</option>
-        <option value="registration2.html">Checking and Savings</option>
-        <option value="2">Corporate Account</option>
-        </select></a>
-        <p>Already a customer? Sign <a href="index.html">on</a></p>
-</label>
+
+    <!-- mobile Nav -->
+    <div class="bg-white w-full h-56 p-4 z-10 mobile-menu md:hidden hidden">
+      <ul class="space-y-3">
+        <li>Credit Cards</li>
+        <li>Banking</li>
+        <li>Lending</li>
+        <li>Investing</li>
+        <li>Wealth Management</li>
+      </ul>
     </div>
-    <p>IMPORTANT INFORMATION ABOUT OPENING A NEW ACCOUNT AT CITIGROUP
-        To help the United States Government fight terrorism and money laundering, Federal law requires us to obtain, verify, and record information that identifies each person that opens an account. What this means for you: when you open an account, we will ask for your name, a street address, date of birth, and an identification number, such as a Social Security number, that Federal law requires us to obtain. We may also ask to see your driver’s license or other identifying documents that will allow us to identify you. We appreciate your cooperation.
-        Terms, conditions and fees for accounts, products, programs and services are subject to change. Not all checking products may be available at time of account opening as early as July 2022. For updated information, please see the Citi Checking Accounts page.
+  </section>
+
+  <section class="max-w-full my-4 mx-2">
+    <div>
+      <img src="images/p6.jpg"/>
+    </div>
+
+    <div>
+      <div>
         
-        ©2023 Citigroup Inc. Citi, Citi and Arc Design and other marks used herein are service marks of Citigroup Inc. or its affiliates, used and registered throughout the world.
-        </p>
-        <!-- Footer Section -->
-  <footer class="w-full bg-zinc-900 h-1/2 px-8 md:p-24 pt-20 pb-12">
+      </div>
+      <h2>Apply for an Account</h2>
+      <p>A few clicks and you are done</p>
+      <div>
+
+      </div>
+    </div>
+
+    <!-- <div class="account-opening-bg">
+    
+    </div>
+    <div class="bg-white w-96 h-80 shadow-lg z-10 -mt-20">
+      <h2>Apply for an Account</h2>
+      <p>A few clicks and you are done</p>
+      <label for="app">Select type of account
+        <a href="registration2.html" class="check"> <select id="app" name="app">
+            <option value="">Select type of account</option>
+            <option value="registration2.html">Checking and Savings</option>
+            <option value="2">Corporate Account</option>
+          </select></a>
+        <p>Already a customer? Sign <a href="index.html">on</a></p>
+      </label>
+    </div> -->
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="w-full bg-zinc-900 h-1/2 px-8 md:p-24 pt-12 pb-12">
     <div class="space-y-8">
       <p class="text-white md:text-justify">
         Important Legal Disclosures & Information
@@ -100,5 +130,6 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </body>
-        </html>
+</body>
+
+</html>
