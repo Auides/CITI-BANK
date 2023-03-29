@@ -43,7 +43,7 @@
           <li>Lending</li>
           <li>Investing</li>
           <li>Wealth Management</li>
-          <li><a href="Account-Opening" style="text-decoration: none; color: white;">Open an Account</a></li>
+          <li><a href="registration.html" style="text-decoration: none; color: white;">Open an Account</a></li>
           <li>How can we help?</li>
         </ul>
       </nav>
@@ -102,13 +102,13 @@
           <div class="flex space-x-4">
             <div class="flex flex-col">
               <label for="#" class="text-sm mb-1">Username</label>
-              <input type="text" placeholder="e.g JoeDavid4"
+              <input type="text" placeholder="e.g JoeDavid4" required pattern="[a-z0-5]{8,}"
                 class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
             </div>
             <div class="flex flex-col">
               <label for="#" class="text-sm mb-1">Password</label>
               <input type="password" placeholder="Enter Your Password"
-                class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg">
+                class="focus:outline-none focus:ring-1 focus:ring-indigo-700 hover:border-indigo-700 px-3 py-2 border border-gray-600 rounded-lg" required>
             </div>
           </div>
           <div class="flex space-x-1 mt-2">
@@ -117,7 +117,7 @@
           </div>
           <button class="w-full bg-indigo-900 text-white rounded-lg py-2 mt-4 hover:bg-indigo-500">Sign On</button>
           <div class="flex justify-between mt-8">
-            <p><a href="#" class="hover:text-indigo-700">Register</a> / <a href="#"
+            <p><a href="registration.html" class="hover:text-indigo-700">Register</a> / <a href="#"
                 class="hover:text-indigo-700">Activate</a></p>
             <p>Forgot <a href="#" class="hover:text-indigo-700">UserID</a> or <a href="#"
                 class="hover:text-indigo-700">Password</a></p>
