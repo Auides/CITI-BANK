@@ -19,4 +19,6 @@ closeBtn.addEventListener('click', () => {
 signOnBtn.addEventListener('click', () => {
     signOnPage.classList.toggle('open');
     mobileNav.classList.remove('open');
+    closeBtn.style.display = 'none';
+    menuBtn.style.display = 'block';
 })
