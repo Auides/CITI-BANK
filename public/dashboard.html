@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DASHBOARD | Citi.com</title>
+  <link rel="Shortcut Icon" href="images/favicon.ico" type="image/ico" />
+  <link rel="stylesheet" href="dashboard.css">
+  
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="citi bank logo">
+    <h1>Welcome, Buddy</h1>
+    <div class="profile">
+      <img src="images/avatar.jpeg" alt="Profile Picture">
+      <h3>John Doe</h3>
+    </div>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </header>
+  <main>
+
+   <div class="load">
+          <img src="images/assistance.png" alt="assistance" class="loan">
+          <img src="images/loan.png" alt="loan" class="loan">
+          <img src="images/bank.png" alt="bank" class="loan">
+          <img src="images/credit-card.png" alt="credit-card" class="loan">
+          <img src="images/logout.jpeg" alt="logout" class="loan">
+          <p class="sign">Sign Out</p>
+   </div>
+    <section class="widget">
+      <h2>Account Balance</h2>
+      <p>$10,000.00</p>
+    </section>
+    <section class="widget">
+      <h2>Recent Transactions</h2>
+      <ul>
+        <li>May 1 - $50.00 spent at Grocery Store</li>
+        <li>Apr 30 - $25.00 deposited</li>
+        <li>Apr 29 - $100.00 spent at Restaurant</li>
+      </ul>
+    </section>
+    <section class="widget">
+      <h2>Transfer Money</h2>
+      <form>
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="0.01" step="0.01" required>
+        <button type="submit">Transfer</button>
+      </form>
+    </section>
+  </main>
+  <script src="scri.js"></script>
+  <!-- Footer Section -->
+  <footer class="w-full text-xs bg-zinc-900 h-1/2 px-8 md:p-12 pt-20 pb-12">
+    <div class="space-y-8">
+      <p class="text-white md:text-justify">
+        Important Legal Disclosures & Information
+
+        Citibank.com provides information about and access to accounts and financial services provided by Citibank, N.A.
+        and its affiliates in the United States and its territories. It does not, and should not be construed as, an
+        offer, invitation or solicitation of services to individuals outside of the United States.
+
+        Terms, conditions and fees for accounts, products, programs and services are subject to change. Not all
+        accounts, products, and services as well as pricing described here are available in all jurisdictions or to all
+        customers. Your eligibility for a particular product and service is subject to a final determination by
+        Citibank. Your country of citizenship, domicile, or residence, if other than the United States, may have laws,
+        rules, and regulations that govern or affect your application for and use of our accounts, products and
+        services, including laws and regulations regarding taxes, exchange and/or capital controls that you are
+        responsible for following.
+
+        The products, account packages, promotional offers and services described in this website may not apply to
+        customers of International Personal Bank U.S. in the Citigold® Private Client International, Citigold®
+        International, Citi International Personal, Citi Global Executive Preferred, and Citi Global Executive Account
+        Packages.
+
+        Deposit products and services are offered by Citibank, N.A., Member FDIC
+      </p>
+      <div class="text-center space-x-4">
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" class="text-white text-3xl hover:text-indigo-700"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
